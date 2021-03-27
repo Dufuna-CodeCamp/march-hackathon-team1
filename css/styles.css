@@ -46,19 +46,6 @@ header a {
     padding: 0px 30px;
 }
 
-.mobile-nav {
-    display: none;
-}
-
-.nav-link-toggle svg {
-    fill: #0CF;
-}
-
-.nav-link-toggle {
-    font-size: 1.5rem;
-    color: #0CF;
-}
-
 .right-nav {
     display: flex;
 }
@@ -169,36 +156,14 @@ footer {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 768px) {
-    .desktop-nav {
-        display: none;
-    }
-
-    .mobile-nav {
+@media screen and (max-width: 678px) {
+    .desktop-nav, .right-nav {
         display: block;
-        padding: 0 30px;
     }
 
-    .main-mobile-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    .desktop-nav {
+        padding: 10px 30px;
     }
 
-    .nav-link-toggle {
-        cursor: pointer;
-    }
 
-    .mobile-links {
-        display: none;
-    }
-
-    .mobile-links .nav-link {
-        margin-bottom: 10px;
-    }
-
-    .mobile-links.show {
-        display: block;;
-        padding: 10px 0;
-    }
 }
