@@ -35,15 +35,15 @@ header a {
     text-transform: capitalize;
 }
 
-.header-title a {
-    color: #0CF;
+.header-title img {
+    width: 100px;
 }
 
 .desktop-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 10px 30px;
 }
 
 .right-nav {
@@ -371,6 +371,33 @@ footer {
     cursor: pointer;
 }
 
+.submit-news {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-news p {
+    font-size: 1.2rem;
+    color: #0CF;
+    margin-bottom: 5px;
+}
+
+.submit-news a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    color: #FFF;
+    border: 1px solid #0CF;
+    border-radius: 5px;
+    padding: 10px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.submit-news a:hover {
+    background-color: #0CF;
+}
+
 .contact img {
     width: 25px;
 }
@@ -429,6 +456,10 @@ footer {
 
     .desktop-nav {
         padding: 10px 30px;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
     }
 
     .container img {
