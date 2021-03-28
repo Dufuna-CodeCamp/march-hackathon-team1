@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+     <link rel="stylesheet" href="newsstyle.css">
+</head>
+ <header>
+        <div class = "desktop-nav">
+            <div class = "header-title">
+                <h1>
+                    <a href = "#">Apex News</a>
+                </h1>
+            </div>
+
+            <nav class = "right-nav">
+                <div class = "nav-link active">
+                    <a href = "index.html">Home</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "business.html">Business</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "politics.html">Politics</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "sports.html">Sports</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "entertainment.html">Entertainment</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+<body>
+<main>
+<div class = "first">
+    <div class= "work">
+    <h1>News Submission Form</h1>
+    <p>We would love for you to share a story with us.</p>
+    <p>Kindly fill the form to get started </p>
+    </div>
+
+<div class="one">
+    <form action="/action_page.php">
+
+        <p>Type of news</p>
+        <input type="radio" id="business" name="topic" value="business">
+        <label for="business">Business</label><br>
+        <input type="radio" id="politics" name="topic" value="politics">
+        <label for="politics">Politics</label><br>
+        <input type="radio" id="sports" name="topic" value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="radio" id="other" name="topic" value="entertainment">
+        <label for="entertainment">Entertainment</label><br><br>
+       <label for="title">Title Input</label><br>
+       <input type="text" id="title" name="title" value=" "><br><br>
+        <p>News body</p>
+        <textarea name="message" rows="10" cols="60"></textarea>
+        <br><br>
+
+      <p>Upload an image</p>
+  <input type="file" id="myFile" name="filename"><br><br>
+  <button type = "submit" class = "submit">SUBMIT</button>
+</form>
+</div>
+</div>
+</main>
+
+ <footer>
+        <div class = "footer-top">
+            <div class = "about">
+                <div class = "footer-image">
+                    <h3>About us</h3>
+                    <img src = "images/about.jpeg" alt = "About us" />
+                </div>
+                <p>Your number one news outlet keeping <br /> you up to date with the latest happenings</p>
+            </div>
+            <div class = "footer-main">
+                <div class = "newsletter">
+                    <div class = "footer-image">
+                        <h3>Sign up for our Newsletter</h3>
+                        <img src = "images/envelope.png" alt = "Envelope" />
+                    </div>
+                    <div class = "footer-form">
+                        <input type = "email" id = "footer-email" placeholder="Enter your email address" />
+                        <button type = "submit" class = "footer-btn">SUBMIT</button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "contact">
+                <div class = "footer-image">
+                    <h3>Contact Us</h3>
+                    <img src = "images/phone.png" alt = "Telephone" />
+                </div>
+                <p>Please contact us via these numbers</p>
+                <p class = "num">+123 803 303 0000</p>
+                <p class = "num">+123 816 710 6842</p>
+            </div>
+        </div>
+    
+        <p class = "copyright">Copyright 2021 Apex News. All rights reserved</p>
+    </footer>
+
+
+</body>
+</html>
