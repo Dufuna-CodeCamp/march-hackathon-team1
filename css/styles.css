@@ -130,6 +130,137 @@ hr {
     color: #000;
 }
 
+/** main **/
+main, aside {
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+}
+
+.headline-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.left-overlay {
+    background-image: url('../images/cbn.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.news-detail {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.category {
+    width: fit-content;
+    background-color: #0CF;
+}
+
+.news-detail .category {
+    padding: 2px;
+}
+
+.title {
+    display: block;
+    width: fit-content;
+    max-width: 95%;
+    padding: 5px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+.left-details img, .right-details img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.top-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #999;
+}
+
+.red {
+    color: red;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.date, .bottom-details p {
+    color: #999;
+}
+
+.side-news {
+    padding: 10px 0;
+}
+
+.top-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-text {
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.side-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.side-title, .side-title2 {
+    color: #000;
+    text-transform: capitalize;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.side-title:hover, .side-title:active, .side-title2:hover, .side-title2:active {
+    color: #0CF;
+}
+
+.bottom-details p {
+    line-height: 1.5;
+}
+
+aside {
+    background-color: #eee;
+}
+
+.other-news .left-details {
+    margin-right: 5px;
+}
+
+.trending img {
+    width: 100px;
+}
+
+.side-container {
+    display: grid;
+    grid-template-columns: 10% repeat(3, 30%);
+    padding: 20px 0;
+}
+
+.side-title2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 /** Footer **/
 
 h3 {
@@ -248,5 +379,25 @@ footer {
 
     .small-box {
         width: 100%;
+    }
+
+    .left-overlay {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .side-title {
+        font-size: 0.9rem;
+    }
+
+    .bottom-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .title {
+        font-size: 1.2rem;
     }
 }
