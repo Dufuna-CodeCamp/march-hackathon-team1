@@ -37,6 +37,7 @@ header a {
 
 .header-title img {
     width: 100px;
+    border-radius: 20px 0;
 }
 
 .desktop-nav {
@@ -422,15 +423,18 @@ main{
     background-color: #F0FFF0;
     margin-bottom: 0px;;
 }
+
 .work h1{
     color: #0CF;
 }
+
 .work{
     text-align: center;
    padding-top: 30px;
     align-items: center;
     margin-left: 20px;
 }
+
 .one{
     border: 1px solid gray;
     border-radius: 7px;
@@ -448,15 +452,16 @@ main{
     font-weight: bold;
 }
 
-input,
+#title,
 textarea {
-    border: 1px solid rgb(240 255 240);
+    border: 2px solid black;
     border-radius: 5px;
 }
 
 .first{
     display: grid;
 }
+
 .submit{
     padding: 10px 7px;
     color: #FFF;
